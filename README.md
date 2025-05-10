@@ -1,7 +1,9 @@
 # LLaMA 2 Bayesian Optimization & Benchmarking
 
 ## Project Description
-A reproducible pipeline to auto‑tune LLaMA 2 (7B) generation hyper‑parameters (temperature, top‑p) via Bayesian Optimization, and benchmark inference latency, throughput, and memory on the Nvidia A100 GPU.
+
+This project provides a complete pipeline to tune the temperature and top‑p hyperparameters of Meta’s LLaMA 2 7B model using Bayesian optimization on NVIDIA A100 GPUs. It includes scripts for running baseline inference benchmarks that collect latency, throughput, and memory usage data, and integrates FlashAttention‑2 kernels and INT‑8 quantization to improve performance. After the optimization step, the same tools evaluate the tuned settings on standard NLP benchmarks such as MMLU, GSM8K, and TruthfulQA to verify that output quality remains consistent.
+
 
 ---
 
@@ -11,8 +13,8 @@ A reproducible pipeline to auto‑tune LLaMA 2 (7B) generation hyper‑paramet
 |------------------------------------------------|-------------|
 | • Set up baseline LLaMA 2 inference benchmark  | ✅ Completed |
 | • Implement Bayesian Optimization loop         | ✅ Completed |
-| • Integrate FlashAttention‑2 & INT‑8 quant      | ✅ Completed |
-| • Run benchmarks on NYU Greene cluster         | ✅ Completed |
+| • Integrate FlashAttention‑2 & INT‑8 quant     | ✅ Completed |
+| • Run benchmarks on Nvidia A100 GPU.           | ✅ Completed |
 | • Evaluate on MMLU, GSM8K, TruthfulQA, etc.    | ✅ Completed |
 | • Generate figures & write report              | ✅ Completed |
 
