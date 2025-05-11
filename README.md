@@ -70,6 +70,11 @@ This project provides a complete pipeline to tune the temperature and top‑p hy
 - Accuracy degradation on downstream tasks is < 0.3% across the board.
 - Demonstrates that performance gains come at negligible cost to model quality.
 
+![parameter_comparison_7B](https://github.com/user-attachments/assets/f76ebea6-92bb-46ac-ac2d-7a5d6608e801)
+![benchmark_7B_bayesian](https://github.com/user-attachments/assets/909ac208-3e00-4ad2-bd51-5b1fb86443e3)
+![dataset_comparison_7B](https://github.com/user-attachments/assets/83dd692c-6c5c-4a82-8739-c084a0a50501)
+
+
 
 ## Example commands to execute the code
 ```bash
@@ -83,6 +88,7 @@ python benchmark_llama.py \
   --model_path ./llama/llama-2-7b \
   --tokenizer_path ./llama \
   --temperature 0.8 \
+
   --top_p 0.95 \
   --max_gen_len 64 \
   --num_runs 3
