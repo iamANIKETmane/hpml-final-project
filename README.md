@@ -3,19 +3,6 @@
 ## Project Description
 This project provides a complete pipeline to tune the temperature and top‑p hyperparameters of Meta’s LLaMA 2 7B model using Bayesian optimization on NVIDIA A100 GPUs. It includes scripts for running baseline inference benchmarks that collect latency, throughput, and memory usage data, and integrates FlashAttention‑2 kernels and INT‑8 quantization to improve performance. After the optimization step, the same tools evaluate the tuned settings on standard NLP benchmarks such as MMLU, GSM8K, and TruthfulQA to verify that output quality remains consistent.
 
----
-
-## Milestones & Status
-| Milestone                                   | Status      |
-|---------------------------------------------|-------------|
-| Set up baseline LLaMA 2 inference benchmark | ✅ Completed |
-| Implement Bayesian Optimization loop        | ✅ Completed |
-| Integrate FlashAttention‑2 & INT‑8 quant    | ✅ Completed |
-| Run benchmarks on NVIDIA A100 GPU           | ✅ Completed |
-| Evaluate on MMLU, GSM8K, TruthfulQA, etc.   | ✅ Completed |
-| Generate figures & write report             | ✅ Completed |
-
----
 
 ## Repository structure
 - **benchmark_llama.py**  
